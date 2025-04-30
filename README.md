@@ -104,9 +104,9 @@ python main.py
 | 🤖 Send to AI   | Submit text to OpenAI GPT  |
 
  🧪 Test Vision API (Optional)
-```bash
+ 
 python test_vision_api.py --image path/to/image.png --mode handwriting
-```
+
 
  📸 Screenshots
 
@@ -116,7 +116,7 @@ python test_vision_api.py --image path/to/image.png --mode handwriting
 
 Pradeep Rajkumar  
 
-🔗 [GitHub]([https://github.com/](https://github.com/Pradeep-r25)) | 🔗 [LinkedIn]([https://linkedin.com/](https://www.linkedin.com/in/pradeeprajkumarr/))  
+🔗 [GitHub]([https://github.com/Pradeep-r25]) | 🔗 [LinkedIn]([https://www.linkedin.com/in/pradeeprajkumarr/])  
 
 ## 📄 License
 
