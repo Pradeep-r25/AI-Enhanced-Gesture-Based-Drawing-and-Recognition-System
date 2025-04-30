@@ -10,13 +10,13 @@ An intelligent, hands-free drawing application powered by real-time hand gesture
 
 🚀 Features
 
-- 🖌️ **Draw using Hand Gestures** – Use your finger like a pen to draw on a virtual canvas.
-- ✊ **Fist Gesture to Save** – Save your drawing instantly by making a fist.
-- 🔁 **Undo, Erase, and Clear** – All gesture-controlled with real-time feedback.
-- 🎨 **Color Selection Menu** – Choose from Blue, Green, Red, and Black.
-- 🧠 **Google Cloud Vision API** – Recognize handwritten or printed text.
-- 🤖 **OpenAI GPT Integration** – Send recognized text to GPT and display AI-generated responses.
-- 💾 **Auto Save** – Saves drawings with timestamps to `saved_drawings/` folder.
+- 🖌️ Draw using Hand Gestures – Use your finger like a pen to draw on a virtual canvas.
+- ✊ Fist Gesture to Save – Save your drawing instantly by making a fist.
+- 🔁 Undo, Erase, and Clear – All gesture-controlled with real-time feedback.
+- 🎨 Color Selection Menu – Choose from Blue, Green, Red, and Black.
+- 🧠 Google Cloud Vision API – Recognize handwritten or printed text.
+- 🤖 OpenAI GPT Integration – Send recognized text to GPT and display AI-generated responses.
+- 💾 Auto Save – Saves drawings with timestamps to `saved_drawings/` folder.
 
  📁 Project Structure
 
@@ -45,8 +45,8 @@ pip install opencv-python mediapipe torch torchvision numpy scikit-learn google-
  ☁️ Google Cloud Vision API Setup
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/).
-2. Create a project and enable the **Vision API**.
-3. Create a **service account key**, download the JSON file.
+2. Create a project and enable the Vision API.
+3. Create a service account key, download the JSON file.
 4. Set the credentials in your environment:
 
 ```bash
@@ -117,7 +117,7 @@ python test_vision_api.py --image path/to/image.png --mode handwriting
 
  👨‍💻 Author
 
-**Pradeep Rajkumar**  
+Pradeep Rajkumar  
 
 🔗 [GitHub]([https://github.com/](https://github.com/Pradeep-r25)) | 🔗 [LinkedIn]([https://linkedin.com/](https://www.linkedin.com/in/pradeeprajkumarr/))  
 
