@@ -34,7 +34,7 @@ except Exception as e:
 ai_response = None
 # Rest of your code continues...
 if not os.path.exists("saved_drawings"):
-    os.makedirs(r"C:\Users\prade\Documents\saved_drawings", exist_ok=True)
+    os.makedirs(r"C:\User\YourName\Documents\saved_drawings", exist_ok=True) #use your path for saving
 
 
 bpoints = [deque(maxlen=1024)]
@@ -153,7 +153,7 @@ def save_current_drawing():
     filename = f"drawing_{timestamp}.png"
 
     # Save directly to the project directory
-    project_dir = r"C:\Users\prade\Downloads\ACP"
+    project_dir = r"C:\User\YourName\Downloads\AI-Enhanced-Gesture-Based-Drawing-and-Recognition-System"  # replace with your project directory
     # Create a 'saved_drawings' folder in the project directory
     save_dir = os.path.join(project_dir, "saved_drawings")
     try:
@@ -318,7 +318,7 @@ def save_current_drawing():
     filename = f"drawing_{timestamp}.png"
 
     # Save directly to the project directory
-    project_dir = r"C:\Users\prade\Downloads\ACP"
+    project_dir = r"C:\User\YourName\Downloads\AI-Enhanced-Gesture-Based-Drawing-and-Recognition-System"  # replace with your project directory
     # Create a 'saved_drawings' folder in the project directory
     save_dir = os.path.join(project_dir, "saved_drawings")
     try:
