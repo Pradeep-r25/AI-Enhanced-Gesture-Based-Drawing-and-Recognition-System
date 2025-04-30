@@ -20,7 +20,6 @@ An intelligent, hands-free drawing application powered by real-time hand gesture
 
  📁 Project Structure
 
-```text
 ├── main.py                  # Main app: gesture-based drawing with AI integration
 ├── collect_gesture_data.py # Tool to collect gesture training data
 ├── train_gesture_model.py  # Trains a PyTorch model for gesture recognition
@@ -31,10 +30,9 @@ An intelligent, hands-free drawing application powered by real-time hand gesture
 ├── saved_drawings/         # Stores user-created drawings
 ├── gesture_model.pth       # Trained PyTorch model (generated after training)
 
- 🛠️ Requirements
 
- 🐍 Python Packages
-
+🛠️ Requirements
+🐍 Python Packages
 Install all required packages using pip:
 
 ```bash
