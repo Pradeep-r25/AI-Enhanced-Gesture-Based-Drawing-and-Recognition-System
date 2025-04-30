@@ -105,7 +105,6 @@ python main.py
 python test_vision_api.py --image path/to/image.png --mode handwriting
 
 
- 📸 Screenshots
 
 > 
 
