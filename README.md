@@ -112,7 +112,7 @@ python test_vision_api.py --image path/to/image.png --mode handwriting
 
 Pradeep Rajkumar  
 
-🔗 GitHub- https://github.com/Pradeep-r25 | 🔗 LinkedIn- https://www.linkedin.com/in/pradeeprajkumarr/  
+🔗 GitHub- https://github.com/Pradeep-r25 
 
 ## 📄 License
 
