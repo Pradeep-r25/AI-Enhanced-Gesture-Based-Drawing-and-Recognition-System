@@ -1,122 +1,122 @@
+# AI-Enhanced Gesture-Based Drawing and Recognition System
 
-AI-Enhanced Gesture-Based Drawing and Recognition System
+An intelligent, hands-free drawing application powered by real-time hand gesture recognition. Users can draw on a virtual canvas using hand gestures, recognize handwritten or printed text, and generate contextual AI responses. Built with Python, OpenCV, MediaPipe, PyTorch, and Google Cloud Vision API.
 
-An intelligent, hands-free drawing application powered by real-time hand gesture recognition. This project enables users to draw on a virtual canvas using just their hands, recognize handwritten/printed text, and generate contextual responses using OpenAI GPT. Built with Python, OpenCV, MediaPipe, PyTorch, and Google Cloud Vision API.
+## Demo
 
- 📸 Demo
+**Coming Soon**
 
-🎥 Coming soon 
+## Features
 
-🚀 Features
+- Real-time hand gesture drawing on a virtual canvas
+- Gesture-based save, undo, erase, and clear operations
+- Color selection (Blue, Green, Red, Black)
+- Handwritten and printed text recognition using Google Cloud Vision API
+- AI-generated responses with OpenAI GPT
+- Automatic timestamped saving of drawings
 
-- 🖌️ Draw using Hand Gestures – Use your finger like a pen to draw on a virtual canvas.
-- ✊ Fist Gesture to Save – Save your drawing instantly by making a fist.
-- 🔁 Undo, Erase, and Clear – All gesture-controlled with real-time feedback.
-- 🎨 Color Selection Menu – Choose from Blue, Green, Red, and Black.
-- 🧠 Google Cloud Vision API – Recognize handwritten or printed text.
-- 🤖 OpenAI GPT Integration – Send recognized text to GPT and display AI-generated responses.
-- 💾 Auto Save – Saves drawings with timestamps to `saved_drawings/` folder.
+## Project Structure
 
- 📁 Project Structure
+```text
+├── main.py                   # Main application
+├── collect_gesture_data.py   # Collect gesture training data
+├── train_gesture_model.py    # Train PyTorch gesture model
+├── test_gesture_model.py     # Test gesture recognition
+├── test_vision_api.py        # Test Vision API
+├── vision_integration.py     # OCR integration
+├── gesture_dataset/          # Training dataset
+├── saved_drawings/           # Saved drawings
+└── gesture_model.pth         # Trained model
+```
 
-├── main.py                  # Main app: gesture-based drawing with AI integration
-├── collect_gesture_data.py # Tool to collect gesture training data
-├── train_gesture_model.py  # Trains a PyTorch model for gesture recognition
-├── test_gesture_model.py   # Tests gesture recognition model in real time
-├── test_vision_api.py      # Tests Google Vision API on sample images
-├── vision_integration.py   # Handles OCR using Google Vision API
-├── gesture_dataset/        # Stores training data (landmarks, labels)
-├── saved_drawings/         # Stores user-created drawings
-├── gesture_model.pth       # Trained PyTorch model (generated after training)
+## Requirements
 
+Install the required packages:
 
-🛠️ Requirements
-🐍 Python Packages
-Install all required packages using pip:
+```bash
+pip install opencv-python mediapipe torch torchvision numpy scikit-learn google-cloud-vision openai
+```
 
-pip install opencv-python mediapipe torch torchvision numpy scikit-learn google-cloud-vision
+## Google Cloud Vision API Setup
 
+1. Create a project in Google Cloud Console.
+2. Enable the **Vision API**.
+3. Create a service account and download the JSON key.
+4. Set the environment variable:
 
- ☁️ Google Cloud Vision API Setup
+**Linux/macOS**
 
-1. Go to [Google Cloud Console](https://console.cloud.google.com/).
-2. Create a project and enable the Vision API.
-3. Create a service account key, download the JSON file.
-4. Set the credentials in your environment:
-
-
-# Linux/macOS
+```bash
 export GOOGLE_APPLICATION_CREDENTIALS="path/to/service-account.json"
+```
 
-# Windows (CMD)
+**Windows (CMD)**
+
+```cmd
 set GOOGLE_APPLICATION_CREDENTIALS="path\to\service-account.json"
+```
 
+## OpenAI API Setup
 
- 🤖 OpenAI API Setup
+Create an OpenAI API key and add it to `main.py`:
 
-1. Get your OpenAI API key from: https://platform.openai.com/account/api-keys
-2. In `main.py`, find this line and insert your key:
+```python
+client = OpenAI(api_key="YOUR_API_KEY")
+```
 
-client = OpenAI(api_key="your_api_key_here")
+## Running the Project
 
+### 1. Collect Gesture Data (Optional)
 
- ▶️ How to Run
-
-### 1. (Optional) Collect Hand Gesture Data
+```bash
 python collect_gesture_data.py
+```
 
-- Press `s` to start collecting.
-- Press `n` to move to the next gesture class.
-- Press `q` to quit and save.
+Controls:
 
-### 2. Train Gesture Recognition Model
+- `S` — Start collecting
+- `N` — Next gesture class
+- `Q` — Save and quit
 
+### 2. Train the Model
+
+```bash
 python train_gesture_model.py
+```
 
+### 3. Test Gesture Recognition (Optional)
 
-### 3. (Optional) Test Trained Gesture Model
-
+```bash
 python test_gesture_model.py
+```
 
+### 4. Launch the Application
 
-### 4. Run the Main Application
-
+```bash
 python main.py
+```
 
+## Gesture Controls
 
-- Use your index finger to draw.
-- Fist = save drawing.
-- Pinch = lift pen.
-- Hover over top menu to select colors, erase, clear, undo, or send to AI.
-- Press "R" (gesture or button) to recognize text.
-- Use "Send to AI" button to query OpenAI GPT with recognized content.
+| Gesture | Action |
+|---------|--------|
+| Fist | Save drawing |
+| Pinch | Lift pen |
+| Hover Menu | Select color, undo, erase, clear |
+| Send to AI | Generate AI response from recognized text |
 
- 🎮 Gesture Controls Summary
+## Test Vision API
 
-| Gesture        | Action                    |
-|----------------|----------------------------|
-| ✊ Fist         | Save the current drawing   |
-| 👉 Pinch        | Lift pen / stop drawing    |
-| 🖌️ Hover Menu  | Choose colors, undo, erase |
-| 🤖 Send to AI   | Submit text to OpenAI GPT  |
-
- 🧪 Test Vision API (Optional)
- 
+```bash
 python test_vision_api.py --image path/to/image.png --mode handwriting
+```
 
+## Author
 
+**Pradeep Rajkumar**
 
-> 
+GitHub: https://github.com/pradeep-builds
 
- 👨‍💻 Author
+## License
 
-Pradeep Rajkumar  
-
-🔗 GitHub- https://github.com/Pradeep-r25 
-
-## 📄 License
-
-This project is licensed under the MIT License – feel free to use and modify with credit.
-
-
-
+This project is licensed under the MIT License.
