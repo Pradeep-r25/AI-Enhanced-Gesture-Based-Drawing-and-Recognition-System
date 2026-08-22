@@ -117,6 +117,3 @@ python test_vision_api.py --image path/to/image.png --mode handwriting
 
 GitHub: https://github.com/pradeep-builds
 
-## License
-
-This project is licensed under the MIT License.
